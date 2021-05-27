@@ -1,16 +1,27 @@
 Package: fastq1R
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Program to proceed DNA sequence data based on fastq1
+Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Daria",
+           family = "Swiderska",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "daria.swiderska@email.com",
+           comment = c(ORCID = "55555555555"))
+Description: Reads files into a data structure and decodes the quality scores.
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: 
+    assertthat,
+    base,
+    magrittr,
+    stringr,
+    tibble
+Suggests: 
+    rmarkdown,
+    knitr,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3

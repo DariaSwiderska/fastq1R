@@ -1,0 +1,26 @@
+---
+title: "fastqr_usage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fastqr_usage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(fastq1R)
+```
+
+this is a vignette which allows me to show how this package should be used.
+
+```{r}
+read_fastq(system.file("good.fq", package="fastq1R"))
+```
+
